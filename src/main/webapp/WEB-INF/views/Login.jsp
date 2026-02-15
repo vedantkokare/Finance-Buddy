@@ -8,7 +8,7 @@
 <!-- Meta Tags -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Login | BudgetBee</title>
+<title>Login | FinanceBee</title>
 
 <%@ include file="headerLinks.jsp"%>
 
@@ -60,8 +60,8 @@
 											<div class="input-group">
 												<span class="input-group-text border-end-0"> <i
 													class="isax isax-sms-notification"></i>
-												</span> <input type="text" class="form-control border-start-0 ps-0"
-													placeholder="Enter Email Address" name="email">
+												</span> <input type="email" class="form-control border-start-0 ps-0"
+													placeholder="Enter Email Address" name="email" required>
 											</div>
 										</div>
 										<div class="mb-3">
@@ -69,10 +69,10 @@
 											<div class="pass-group input-group">
 												<span class="input-group-text border-end-0"> <i
 													class="isax isax-lock"></i>
-												</span> <span class="isax toggle-password isax-eye-slash"></span> <input
-													type="password"
-													class="pass-inputs form-control border-start-0 ps-0"
-													placeholder="Enter Password" name="pwd">
+												</span> <span class="isax toggle-password isax-eye-slash" id="toggle-password"></span> 
+												<input type="password"
+													class="pass-input form-control border-start-0 ps-0"
+													placeholder="Enter Password" name="pwd" required>
 											</div>
 										</div>
 										<div
@@ -138,7 +138,7 @@
 	</div>
 	<!-- End Wrapper -->
 
-	<!-- My JavaScript -->
+	<!-- Success/Error Message JavaScript -->
 	<script>
 	//Message Timeout
 	setTimeout(() => {
@@ -154,5 +154,24 @@
         window.history.forward();
     }
 	</script>
+	<!-- Success/Error Message JavaScript -->
+	
+	<!-- Password Toggle JavaScript -->
+	<script>
+	//Message Timeout
+	setTimeout(() => {
+		const success = document.getElementById("successAlert");
+		const error = document.getElementById("errorAlert");
+
+		if (success) success.style.display = "none";
+		if (error) error.style.display = "none";
+	}, 3000);
+	
+    window.history.forward();
+    function noBack() {
+        window.history.forward();
+    }
+	</script>
+	<!-- Password Toggle JavaScript -->
 
 	<%@ include file="footerLinks.jsp"%>

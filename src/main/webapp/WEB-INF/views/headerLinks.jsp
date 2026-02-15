@@ -8,6 +8,9 @@
 	<!-- Apple Touch Icon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/Bee Icon.png">
 
+	<!-- Custom JS -->
+	<script src="assets/js/script.js"
+	type="ca4aa48f848ba7434a5690d8-text/javascript"></script>
 	<!-- Theme Script js -->
 	<script src="assets/js/theme-script.js" type="ca4aa48f848ba7434a5690d8-text/javascript"></script>
 

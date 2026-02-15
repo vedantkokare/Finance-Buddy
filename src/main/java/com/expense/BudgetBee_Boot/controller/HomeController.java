@@ -39,6 +39,14 @@ public class HomeController {
 	public String dashboardPage(HttpSession hs, Model m) {
 		String username = (String) hs.getAttribute("log-name");
 		
+		// totals
+	    int totalDebit = es.totalDebit(username);
+	    int totalCredit = es.totalCredit(username);
+	    int totalAmount = es.getTotalAmount(username);
+
+	    m.addAttribute("totalDebit", totalDebit);
+	    m.addAttribute("totalCredit", totalCredit);
+	    m.addAttribute("getTotalAmount", totalAmount);
 		List<Expense_Entities> list = es.getAll(username);
 		m.addAttribute("list", list);
 		

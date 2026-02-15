@@ -1,7 +1,3 @@
-/*
-Author       : Dreamstechnologies
-Template Name: Kanakku - Bootstrap Admin Template
-*/
 
 (function () {
     "use strict";
@@ -40,7 +36,6 @@ Template Name: Kanakku - Bootstrap Admin Template
 	});
 
 	// Logo Hide Btn
-
 	$(document).on("click",".hideset",function () {
 		$(this).parent().parent().parent().hide();
 	});
@@ -50,7 +45,6 @@ Template Name: Kanakku - Bootstrap Admin Template
 	});
 
 	// Stick Sidebar
-
 	if ($(window).width() > 767) {
 		if ($('.theiaStickySidebar').length > 0) {
 			$('.theiaStickySidebar').theiaStickySidebar({

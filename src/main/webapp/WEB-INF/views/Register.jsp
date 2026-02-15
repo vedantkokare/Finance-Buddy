@@ -9,7 +9,7 @@
 <!-- Meta Tags -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Register | BudgetBee</title>
+<title>Register | FinanceBee</title>
 
 <%@ include file="headerLinks.jsp"%>
 
@@ -91,7 +91,7 @@
 													class="isax isax-lock"></i>
 												</span> <span class="isax toggle-passwords isax-eye-slash"></span>
 												<input type="password"
-													class="pass-input form-control border-start-0 ps-0"
+													class="pass-inputs form-control border-start-0 ps-0"
 													placeholder="Confirm Password" name="confirm_pwd">
 											</div>
 										</div>

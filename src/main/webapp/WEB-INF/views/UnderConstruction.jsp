@@ -7,7 +7,7 @@
 	<!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Under Construction | BudgetBee</title>
+    <title>Under Construction | FinanceBee</title>
 
 	<%@ include file="headerLinks.jsp"%>
 

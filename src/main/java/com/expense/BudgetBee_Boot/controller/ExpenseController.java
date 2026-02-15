@@ -21,27 +21,6 @@ public class ExpenseController {
 	
 	@Autowired
 	ExpenseService es;
-	
-	@GetMapping("/dashboard-page")
-	public String dashboard(Model m, HttpSession hs) {
-
-	    String username = (String) hs.getAttribute("log-name");
-
-	    // totals
-	    int totalDebit = es.totalDebit(username);
-	    int totalCredit = es.totalCredit(username);
-	    int totalAmount = es.getTotalAmount(username);
-
-	    // list
-	    List<Expense_Entities> list = es.getAll(username);
-
-	    m.addAttribute("totalDebit", totalDebit);
-	    m.addAttribute("totalCredit", totalCredit);
-	    m.addAttribute("getTotalAmount", totalAmount);
-	    m.addAttribute("list", list);
-
-	    return "dashboard";
-	}
 
 	
 	@RequestMapping("/insert")

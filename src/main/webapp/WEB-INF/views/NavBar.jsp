@@ -6,7 +6,7 @@
 
 				<!-- Logo -->
 				<div class="header-left">
-					<h4>BudgetBee <i class="fa-brands fa-forumbee"></i></h4>
+					<h4>FinanceBee <i class="fa-brands fa-forumbee"></i></h4>
 				</div>
 
 				<!-- Sidebar Menu Toggle Button -->

@@ -9,7 +9,7 @@
 <!-- Meta Tags -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Transactions | BudgetBee</title>
+<title>Transactions | FinanceBee</title>
 <%@ include file="headerLinks.jsp"%>
 </head>
 
